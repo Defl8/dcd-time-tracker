@@ -1,4 +1,5 @@
 import xlrd
+from typing import Any
 
 class Logger:
     def __init__(self, workbook_path: str) -> None:
@@ -10,5 +11,5 @@ class Logger:
     def workbook(self) -> xlrd.Book | None:
         return self.__workbook
 
-    def get_sheets(self) -> list[xlrd.Sheet]:
+    def get_sheets(self) -> list[Any]:
         return self.workbook.sheets()

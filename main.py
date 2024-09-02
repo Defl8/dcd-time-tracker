@@ -1,4 +1,3 @@
-import logger
 from logger.classes.logger import Logger
 
 
