@@ -1,5 +1,8 @@
+from logger.classes.logger import Logger
+
+
 def main() -> None:
-    raise NotImplemented
+    logger = Logger("testdata.xls")
 
 
 if __name__ == "__main__":
